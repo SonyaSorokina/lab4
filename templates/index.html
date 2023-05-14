@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='css/style.css')}}">
+</head>
+<body>
+<div class="box">
+    <form action="" method="post">
+        <p></p>
+      <p>ФИО:</p>
+    <input type="text" name="fio"><br>
+      <p>Ваша группа:</p>
+    <input type="text" name="group"><br>
+      <p>Довольны ли вы своими оценками?</p>
+      <input type="text" name="question"><br>
+      <p></p>
+    <input type="submit">
+    </form>
+</div>
+<p>{{ans}}</p>
+</body>
+</html>
